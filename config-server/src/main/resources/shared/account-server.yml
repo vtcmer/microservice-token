@@ -1,0 +1,13 @@
+server:
+ context-path: /accounts
+ port: 8802
+ 
+security:
+  oauth2:
+    client:
+      clientId: account-service
+      clientSecret: 123456780
+      accessTokenUri: http://localhost:8801/auth/oauth/token
+      grant-type: client_credentials
+      scope: server
+  

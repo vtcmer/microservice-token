@@ -1,0 +1,12 @@
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8800/eureka/
+
+
+security:
+  oauth2:
+    resource:
+      user-info-uri: http://localhost:8801/auth/api/v1/users/current
